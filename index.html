@@ -55,8 +55,8 @@
             border-radius: 4px;
             background-color: #8a335e;
             
-            bottom: 0;
-            left: 0;
+            inset: 0;
+            z-index; -1;
             transform-origin: center;
             transform: scaleX(0);
             transition: transform .3s ease-in-out;
@@ -65,7 +65,11 @@
         a:hover::before {
           transform-origin: left;
           transform: scaleX(1);
-          color: #8a335e;
+          
+        }
+        a:hover {
+            color: #8a335e;
+            
         }
         a:link { 
             text-decoration: none; 
