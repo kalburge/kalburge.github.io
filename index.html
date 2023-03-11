@@ -13,7 +13,7 @@
             text-align: justify;
             font-size: 20px;
             margin: 20px 60px 20px 30px; /* top right-left bottom  OR top right bottom left*/ 
-            padding: 10px 640px 10px;
+            padding: 10px 20px 10px 640px;
             /*
             padding-top, padding-right, padding-bottom
             padding-left
@@ -44,7 +44,7 @@
           z-index: -1;
         } */
         a {
-          position: relative;
+            position: relative;
         }
 
         a::before {
@@ -54,9 +54,8 @@
             height: 4px;
             border-radius: 4px;
             background-color: #FF69B4;
-            
-            left: 0;
             bottom: 0;
+            left: 0;
             transform-origin: right;
             transform: scaleX(0);
             transition: transform .3s ease-in-out;
@@ -65,7 +64,6 @@
         a:hover::before {
           transform-origin: left;
           transform: scaleX(1);
-          
         }
         a:link { 
             text-decoration: none; 
