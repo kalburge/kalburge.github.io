@@ -1,5 +1,3 @@
-<!DOCTYPE html>
-
 <body style="background-color:#002D72;">
 <!--      font-family:helveticaneue; -->
 
@@ -19,8 +17,8 @@
 /*             text-align: justify; */
             font-size: 20px;
             line-height: 1.4;
-            margin: 20px 5% 20px 5%; /* top right-left bottom  OR top right bottom left*/ 
-            padding: 10px 30px 10px 40px;
+            /* margin: 0px 0% 0px 2%; /* top right-left bottom  OR top right bottom left*/ 
+            padding: 0px 10px 5px 7%;
             /*
             padding-top, padding-right, padding-bottom
             padding-left
@@ -37,18 +35,18 @@
             color: #c3dbf7;
             font-weight: normal;
             font-size: 25px;
-            margin: 20px 5% 20px 5%; /* t rl b */
+            /* margin: 20px 5% 20px 5%; /* t rl b */
             
-            padding: 40px 40px 15px;
+            padding: 40px 10px 5px 7%;
         }
         h2{
             background-color: #002D72;
             color: #c3dbf7;
             font-weight: bold;
             font-size: 22px;
-            margin: 20px 5% 20px 5%; /* t rl b */
+            /*margin: 20px 5% 20px 5%; /* t rl b */
             
-            padding: 40px 40px 15px;
+            padding: 10px 10px 5px 7%;
         }
 /*         a::before {
           background: #ff9800;
@@ -88,6 +86,32 @@
      body {
         font-family: "HelveticaNeue-Light";
     }
+    
+
+    * {
+      box-sizing: border-box;
+    }
+
+    /* Create two unequal columns that floats next to each other */
+    .column {
+      float: left;
+      padding: 0px 10px 10px 0px;
+    }
+
+    .left {
+      width: 20%;
+    }
+
+    .right {
+      width: 80%;
+    }
+
+    /* Clear floats after the columns */
+    .row:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
     </style>
 </head>
     
@@ -95,24 +119,86 @@
 <html>
 <body>
 
-<h1>CV</h1>
+<h1>Curriculum Vitae</h1>
     <h2>Education</h2>
+   
+    
+    <div class="row">
+		<div class="column left">
+        	2020-2024
+        </div>
+			
+      	<div class="column right">
+			<b>Johns Hopkins University</b>, Baltimore, MD
+          	<br><i>Biomedical Engineering (B.S.), Applied Mathematics + Statistics (B.S.), Economics (B.A.)</i>
+          	<br>Concentrations: Biomedical Data Science, Probability and Stochastic Processes
+        </div>
+        
 
-    <div>
-        <b>Johns Hopkins University</b>, Baltimore, MD
-        <br><i>Biomedical Engineering (B.S.), Applied Mathematics + Statistics (B.S.), Economics (B.A.)</i>
-        <br>Concentrations: Biomedical Data Science, Probability and Stochastic Processes
         
-    </div>
+      
+	</div>
     
-    <h2>Experience</h2>
+    <div class="row">
+    	<div class="column left">
+        	2016-2020
+        </div>
+        
+        <div>
+          <b>W. T. Woodson High School</b>, Fairfax, VA
+          <br><i>Advanced Studied Diploma</i>
+        </div>
+        
+	</div>
     
-    <div>
-        Under development...
-        
-    </div>
-        
-        
+    
+    
+    <!--         Skills                   -->
+    <h2>Skills</h2>
+   
+    
+    <div class="row">
+		<div class="column left">
+        	General
+            
+        </div>
+			
+      	<div class="column right">
+			Experimental Design, AI/ML, Public Speaking, Leadership, Relationship Management
+        </div>
+	</div>
+    
+    
+    <div class="row">
+		<div class="column left">
+        	Languages
+            
+        </div>
+			
+      	<div class="column right">
+			MATLAB, Python, Java,  STATA, R, Excel, \LaTeX, CSS/HTML
+        </div>
+	</div>
+    
+    <div class="row">
+		<div class="column left">
+        	Coursework
+            <br>(ongoing*)
+            
+        </div>
+			
+      	<div class="column right">
+			Optimization I,  Numerical Linear Algebra,  Probability,  Statistics*,  Dynamical Systems & Nonlinear Dynamics, Statistical Physics, Models & Simulations,   Computational Cardiology, Signals, Systems, & Controls, Systems Biology,  Data Structures,  Data Science, Econometrics, Experimental Economics*
+        </div>
+	</div>
+    
+    
+        <!--       END of Skills                      -->
+    
+    
+    
+
+
 
 </body>
 </html>
